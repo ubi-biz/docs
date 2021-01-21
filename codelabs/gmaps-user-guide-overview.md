@@ -116,4 +116,4 @@ Duration: 1
 
 - '기초데이터 - 상가업소현황' 조작 가이드 `(예정)`
 
-- '상권분석 - 편의점상권'  조작 가이드 [바로가기](http://google.com)
+- '상권분석 - 편의점상권'  조작 가이드 [바로가기](/codelabs/gmaps-user-guide-cvs/index.html)
