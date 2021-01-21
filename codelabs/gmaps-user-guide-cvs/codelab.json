@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-01-21T11:45:19-05:00",
+  "id": "gmaps-user-guide-cvs",
+  "duration": 25,
+  "title": "격자형 통계 지도 활용 사례:편의점 상권조사",
+  "authors": "Jay S Han",
+  "summary": "편의점 상권 조사에 활용하는 예시를 통해 격자형 통계 지도 서비스를 어떻게 활용할 수 있는 지 이해할 수 있습니다.",
+  "source": "gmaps-user-guide-cvs.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "grid map"
+  ],
+  "tags": [],
+  "feedback": "https://ubi-biz.github.io/",
+  "url": "gmaps-user-guide-cvs"
+}

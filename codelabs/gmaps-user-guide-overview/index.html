@@ -1,0 +1,143 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>격자형 통계 지도 사용자 가이드</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="gmaps-user-guide-overview"
+                  title="격자형 통계 지도 사용자 가이드"
+                  environment="web"
+                  feedback-link="https://ubi-biz.github.io/">
+    
+      <google-codelab-step label="Welcome" duration="1">
+        <p>이 문서는 Ubimemes의 격자형 통계 지도 서비스를 이용하는 데 필요한 기초적인 사용방법을 설명하기 위한 문서입니다.</p>
+<p>본 문서를 통해 격자형 통계 지도 서비스의 화면 구성과 기본적인 조작 방법을 이해할 수 있습니다.</p>
+<aside class="special"><p>본 문서는 격자형 통계 지도를 처음 접하시는 분들을 위한 내용으로 기술되어 있으므로 화면 조작에 이미 익숙하신 분들은 보실 필요 없습니다.</p>
+</aside>
+<p>기재된 내용에 오류(잘못된 내용, 맞춤법 오류, 불분명한 표현 등)가 있을 경우 좌측 하단의 ‘Report a mistake&#39;링크를 통해 연락 주십시오.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="개요" duration="5">
+        <p>Ubimemes의 격자형 통계 지도 서비스는 격자 지도를 기반으로 각종 데이터를 시각화하여 제공하는 서비스입니다. 조사 대상 지역을 마우스 드래그를 통하여 직관적으로 선택할 수 있으며, 선택한 지역 내의 통계정보를 다양한 형태의 차트로 확인할 수 있습니다.</p>
+<p>화면 구성은 데이터 종류를 선택하기 위한 사이드바 메뉴와, 조사 지역 선택을 위한 격자지도, 선택 지역내의 정보를 표시하는 차트 및 데이터 테이블로 구성되어 있으며 각각의 특징을 아래에 소개합니다.</p>
+<h2 is-upgraded>데이터 종류 선택</h2>
+<p>데이터 종류는 크게 소스 데이터의 특성을 있는 그대로 활용하기 위한 <strong>기초데이터</strong>와, 두개 이상의 데이터를 특정 목적으로 융합한 <strong>응용데이터</strong>로 분류하였습니다.</p>
+<p>문서 작성 시점(2021년 1월) 기준, 기초데이터로는 인구현황과 상가업소현황을 제공하고 있으며, 응용데이터로는 상권조사를 목적으로 활용할 수 있는 데이터를 제공하고 있습니다. 제공하는 기초데이터의 출처는 아래와 같습니다.</p>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>No.</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>목록</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>출처</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p>
+</td><td colspan="1" rowspan="1"><p>인구현황</p>
+</td><td colspan="1" rowspan="1"><p>행정안전부 제공 ‘2019년도 주민등록인구현황&#39;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2</p>
+</td><td colspan="1" rowspan="1"><p>상가업소현황</p>
+</td><td colspan="1" rowspan="1"><p>소상공인진흥공단 제공 ‘2017년도 상가업소 현황&#39;</p>
+</td></tr>
+</table>
+<p>응용데이터인 상권조사데이터는 편의점과 치킨전문점을 예시로 제공하고 있습니다.</p>
+<aside class="special"><p>기초데이터와 응용데이터는 사회적 요구에 따라 지속적으로 개발하여 제공할 예정이며, 원본 데이터의 오류나 수정에 따라 예고 없이 변경될 수 있습니다.</p>
+</aside>
+<aside class="warning"><p>인구현황은 시,군,구별로 집계되어 있는 행정안전부의 인구통계를 Ubimemes의 자체 알로리즘에 따라 250m 격자 단위로 변환한 데이터입니다. 변환과정에서 생기는 불가피한 오차가 있으며 선택 범위가 넓을수록(선택되는 격자가 많을수록) 오차가 적어 집니다. 다만, 선택 범위를 지나치게 넓게 하면 처리 속도가 다소 느려질 수 있습니다.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="화면구성 I - 격자지도" duration="5">
+        <p>조사 대상 지역을 선택하는 데 필요한 기초적인 격자 지도 조작 설명입니다. <img alt="population-map-move" src="img/1fcc4f226538fdd3.png"></p>
+<h2 is-upgraded>지도의 확대/축소 <img style="width: 24.00px" src="img/45cfac7dfb10e464.png">/<img style="width: 24.00px" src="img/677d2705c1184bb1.png"></h2>
+<p><img style="width: 24.00px" src="img/45cfac7dfb10e464.png"> 또는 <img style="width: 24.00px" src="img/677d2705c1184bb1.png">아이콘을 클릭하거나 마우스 휠을 사용하여 지도의 배율을 확대 또는 축소할 수 있습니다.</p>
+<aside class="warning"><p>성능 저하를 방지하기 위해 지도의 배율을 지나치게 작은 배율에서는 격자를 선택할 수 없도록 되어 있습니다. 격자가 표시되지 않을 경우 지도를 확대하여 적절한 배율로 표시되도록 하여야 합니다.</p>
+</aside>
+<h2 is-upgraded>지도의 이동 <img style="width: 24.00px" src="img/751a7143c43d6695.png"></h2>
+<p><img style="width: 24.00px" src="img/751a7143c43d6695.png">아이콘이 선택된 상태에서 마우스를 드래그 하면 지도를 움직일 수 있습니다. Shift키를 누른채로 마우스를 드래그 하면 아이콘이 선택되지 않은 상태에서도 바로 이동시킬 수 있습니다.</p>
+<h2 is-upgraded>대상 지역의 선택 <img style="width: 24.00px" src="img/4967e1931b21e1d7.png"></h2>
+<p><img style="width: 24.00px" src="img/4967e1931b21e1d7.png">아이콘이 선택된 상태에서 마우스를 드래그 하면 해당 영영이 선택됩니다. 선택된 격자는 정보의 밀도에 따라 그라디에이션으로 구분되어 표시됩니다. 선택되지 않거나 컬러가 표시되지 않는 격자는 관련 데이터가 없다는 것을 의미합니다.</p>
+<h2 is-upgraded>데이터의 갱신 <img style="width: 24.00px" src="img/42d5e6aa4970c41f.png"></h2>
+<p>지도를 확대/축소했거나 이동함에 따라 서버로부터 데이터를 다시 받아와야 하는 경우에 필요한 기능입니다. <img style="width: 24.00px" src="img/42d5e6aa4970c41f.png">아이콘을 클릭하면 그 시점에 지도에서 표시하고 있는 전체 지역에 대한 데이터를 갱신합니다. 상권조사 서비스에서의 입지조건 검색에서 조사 대상 범위를 설정할 때 사용하고 있습니다.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="화면구성 II - 차트" duration="5">
+        <h2 is-upgraded>인구 피라미드</h2>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 400.00px" src="img/39522dec67391795.png"></p>
+</td><td colspan="1" rowspan="1"><p>선택 지역의 인구분포를 5세 간격으로 표시합니다. <br><br>x축은 전체 인구에 대한 백분률을 나타냅니다.</p>
+</td></tr>
+</table>
+<h2 is-upgraded>라인차트</h2>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 400.00px" src="img/bacd731b2ad1c75b.png"></p>
+</td><td colspan="1" rowspan="1"><p>데이타의 변동 추이를 시계열로 표시합니다. <br><br>라인위에 마우스를 올려 놓으면 상세한 정보가 표시<br>됩니다.</p>
+</td></tr>
+</table>
+<h2 is-upgraded>바차트</h2>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 400.00px" src="img/2a1bd799fa93ce84.png"></p>
+</td><td colspan="1" rowspan="1"><p>항목의 명칭이 지나치게 길어서 차트로 표시하였을<br>때 위화감이 생기는 경우가 있어 긴 항목명은 일부 <br>생략하여 표시합니다.<br><br>바 위에 마우스를 올리면 생략되지 않은 전체 항목<br>명을 확인할 수 있습니다. <br><br>처리하는 데이터의 성격에 따라 바를 클릭하여 <br>주변의 다른 컴포넌트를 활성화 시키도록 사용되는 <br>경우도 있습니다.</p>
+</td></tr>
+</table>
+<h2 is-upgraded>기타</h2>
+<p>기타 아래와 같은 차트를 포함하고 있습니다.</p>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>파이차트</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>그룹 바차트</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 300.00px" src="img/2626a13de90485d6.png"></p>
+</td><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 400.00px" src="img/fd9b61aa43e0b477.png"></p>
+</td></tr>
+</table>
+<p><strong>데이터 테이블</strong><img alt="population-map-move" src="img/b7ca1fb65ba0b85.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="화면조작" duration="1">
+        <p>전술한 화면구성에 기반한 격자형 통계 지도 서비스 각 메뉴의 조작 방법을 아래 문서에서 확인하실 수 있습니다.</p>
+<ul>
+<li>‘기초데이터 - 인구현황&#39; 조작 가이드 <code>(예정)</code></li>
+<li>‘기초데이터 - 상가업소현황&#39; 조작 가이드 <code>(예정)</code></li>
+<li>‘상권분석 - 편의점상권&#39;  조작 가이드 <a href="http://google.com" target="_blank">바로가기</a></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-01-21T10:27:19-05:00",
+  "id": "gmaps-user-guide-overview",
+  "duration": 17,
+  "title": "격자형 통계 지도 사용자 가이드",
+  "authors": "Jay S Han",
+  "summary": "격자형 통계 지도 서비스의 기초적인 화면 조작을 이해할 수 있습니다.",
+  "source": "gmaps-user-guide-overview.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "grid map"
+  ],
+  "tags": [],
+  "feedback": "https://ubi-biz.github.io/",
+  "url": "gmaps-user-guide-overview"
+}
